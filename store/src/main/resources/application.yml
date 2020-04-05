@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: store-api
+  datasource:
+    url: jdbc:postgresql://${PG_HOST}:${PG_PORT}/${PG_DB}
+    username: ${PG_USERNAME}
+    password: ${PG_PASSWORD}
+    driver-class:
+      name: ${DRIVER_NAME}
+    tomcat:
+      max-wait: 1800000
+    hikari:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+      useServerPrepStmts: true
+      useLocalSessionState: true
+      rewriteBatchedStatements: true
+      cacheResultSetMetadata: true
+      cacheServerConfiguration: true
+      elideSetAutoCommits: true
+      maintainTimeStats: false
+      leakDetectionThreshold: 16000
+      maximumPoolSize: 50
+      minimumIdle: 25
+      idleTimeout: 30000
+      maxLifetime: 60000
+  flyway:
+    url: jdbc:postgresql://${PG_HOST}:${PG_PORT}/${PG_DB}
+    username: ${PG_USERNAME}
+    password: ${PG_PASSWORD}
+server:
+  port: ${SERVER_PORT:8080}
