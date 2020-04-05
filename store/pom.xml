@@ -20,7 +20,7 @@
     <formatter-plugin.version>2.11.0</formatter-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <checkstyle-maven-plugin.version>3.1.0</checkstyle-maven-plugin.version>
-    <checkstyle-puppycrawl-tools.version>8.8</checkstyle-puppycrawl-tools.version>
+    <checkstyle-puppycrawl-tools.version>8.29</checkstyle-puppycrawl-tools.version>
     <checkstyle.config.location>${project.basedir}/custom_google_checks.xml</checkstyle.config.location>
   </properties>
 
